@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="Menu :" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/update_name"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:text="Name :" />
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_below="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:layout_alignLeft="@id/update_description"
+        android:text="Description :" />
+    <EditText
+        android:id="@+id/update_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:maxLength="155"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_description"
+        android:layout_alignLeft="@id/update_price"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="Price:" />
+    <EditText
+        android:id="@+id/update_price"
+        android:layout_below="@id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/update_price"
+        android:layout_alignLeft="@id/update_price"
+        android:background="@color/ColorR"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return" />
+    <Button
+        android:id="@+id/update1"
+        android:layout_below="@id/update_price"
+        android:layout_alignRight="@id/update_price"
+        android:background="@color/ic_launcher_background"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD" />
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FFFF"
+        app:menu="@menu/menu_everywhere"
+        android:layout_gravity="start"
+        tools:ignore="MissingConstraints"
+        app:headerLayout="@layout/header" />
+
+
+</android.support.v4.widget.DrawerLayout>
